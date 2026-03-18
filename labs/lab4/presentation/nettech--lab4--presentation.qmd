@@ -3,8 +3,8 @@
 author:
   name: Просина Ксения Максимовна
   degrees: DSc
-  orcid: 0000-0002-0877-5863
-  email: kulyabov-ds@rudn.ru
+  orcid: 0000-0002-0877-7063
+  email: 1132231845@pfur.ru
   affiliation:
     - name: Российский университет дружбы народов
       country: Российская Федерация
@@ -12,11 +12,11 @@ author:
       city: Москва
       address: ул. Миклухо-Маклая, д. 6
 ## Title
-title: Сетевые технологии
-subtitle: Лабораторная работа №4. Подготовка экспериментального стенда GNS3
+title: "Сетевые технологии"
+subtitle: "Лабораторная работа №4"
 license: CC BY
 date: today
-date-format: "YYYY-MM-DD"
+date-format: "YYYY-MM-DD" # Example: 2025-09-06
 ---
 
 # Информация
@@ -24,7 +24,7 @@ date-format: "YYYY-MM-DD"
 ## Докладчик
 
 :::::::::::::: {.columns align=center}
-::: {.column width="58%"}
+::: {.column width="70%"}
 
   * Просина Ксения Максимовна
   * Студент 3 курса
@@ -32,10 +32,10 @@ date-format: "YYYY-MM-DD"
   * Российский университет дружбы народов им. П. Лумумбы
   * [1132231938@rudn.ru](1132231938@rudn.ru)
 
+
 :::
 ::: {.column width="30%"}
 
-![Логотип РУДН](image/logo.png){width=80%}
 
 :::
 ::::::::::::::
@@ -88,7 +88,7 @@ date-format: "YYYY-MM-DD"
 - Основное приложение GNS3
 - Инструмент TraceNS для трассировки
 - Ярлыки в меню "Пуск" и на рабочем столе
-- Все файлы в директории C:\Program Files\GNS3\
+- Все файлы в директории C:/Program Files/GNS3/
 
 # Настройка виртуальной машины
 

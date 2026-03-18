@@ -1,9 +1,8 @@
 ---
-## Author
 author:
   name: Просина Ксения Максимовна
   degrees: DSc
-  orcid: 0000-0002-0877-7063
+  orcid: 0000-0002-0877-5863
   email: kulyabov-ds@rudn.ru
   affiliation:
     - name: Российский университет дружбы народов
@@ -11,11 +10,11 @@ author:
       postal-code: 117198
       city: Москва
       address: ул. Миклухо-Маклая, д. 6
-
-## Title
-title: "Анализ сетевого трафика с использованием Wireshark"
-subtitle: "Лабораторная работа №3. Анализ кадров канального и транспортного уровней"
-license: "CC BY"
+title: Сетевые технологии
+subtitle: Лабораторная работа №3
+license: CC BY
+date: today
+date-format: "YYYY-MM-DD"
 ---
 
 # Цель работы
