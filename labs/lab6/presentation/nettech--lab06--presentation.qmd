@@ -4,28 +4,19 @@ author:
   name: Просина Ксения Максимовна
   degrees: DSc
   orcid: 0000-0002-0877-7063
-  email: 1132231938@pfur.ru
+  email: 1132231845@pfur.ru
   affiliation:
     - name: Российский университет дружбы народов
       country: Российская Федерация
       postal-code: 117198
       city: Москва
       address: ул. Миклухо-Маклая, д. 6
-
 ## Title
 title: "Сетевые технологии"
 subtitle: "Лабораторная работа №6"
 license: CC BY
 date: today
-date-format: "YYYY-MM-DD"
-
-format:
-  revealjs:
-    theme: default
-    slide-number: true
-    loop: false
-    small: false
-    background-color: white
+date-format: "YYYY-MM-DD" # Example: 2025-09-06
 ---
 
 # Информация
@@ -41,8 +32,10 @@ format:
   * Российский университет дружбы народов им. П. Лумумбы
   * [1132231938@rudn.ru](1132231938@rudn.ru)
 
+
 :::
 ::: {.column width="30%"}
+
 
 :::
 ::::::::::::::
@@ -101,55 +94,55 @@ format:
 
 Перед настройкой запущен захват трафика в Wireshark для последующего анализа протоколов ARP, ICMP и ICMPv6/NDP.
 
-![Запускаем окно wireshark](images/1.png)
+![Запускаем окно wireshark](image/1.png)
 
 ## Настройка интерфейсов маршрутизатора FRR
 
 На первом этапе настроена IPv4-часть сети. На интерфейсы маршрутизатора FRR назначены IP-адреса согласно таблице адресации.
 
-![Настройка интерфейсов маршрутизатора FRR](images/2.png)
+![Настройка интерфейсов маршрутизатора FRR](image/2.jpg)
 
 ## Вывод ip адрессов PC1 и PC2
 
 Настроены оконечные устройства PC1 и PC2. Корректность проверена командами show ip.
 
-![Вывод ip адрессов PC1 и PC2](images/3.png)
+![Вывод ip адрессов PC1 и PC2](image/3.jpg)
 
 ## Конфигурация IPv4 на маршрутизаторе FRR
 
 Интерфейс eth0: 172.16.20.1/25, eth1: 172.16.20.129/25. После настройки проверена связность между PC1 и PC2 командой ping.
 
-![Конфигурация IPv4 на маршрутизаторе FRR](images/4.png)
+![Конфигурация IPv4 на маршрутизаторе FRR](image/4.png)
 
 ## Задание ipv6 адресов части для server, PC3, PC4
 
 Настроена IPv6-часть сети на базе маршрутизатора VyOS. На интерфейсы назначены статические IPv6-адреса.
 
-![Задание ipv6 адресов части для server, PC3, PC4](images/5.png)
+![Задание ipv6 адресов части для server, PC3, PC4](image/5.jpg)
 
 ## Выполнение команд для настройки Vyos часть
 
 Команды set interfaces ethernet назначают адреса, router-advert настраивает рассылку RA для автоконфигурации клиентов по SLAAC.
 
-![Выполнение команд для настройки Vyos часть](images/6.png)
+![Выполнение команд для настройки Vyos часть](image/6.png)
 
 ## Анализ ARP-запросов в Wireshark
 
 На скриншоте видны ARP-запросы и ответы в IPv4-подсети. Запрос "Who has 172.16.20.10?" демонстрирует разрешение IP-адресов в MAC-адреса.
 
-![Анализ ARP-запросов в Wireshark](images/7.png)
+![Анализ ARP-запросов в Wireshark](image/7.jpg)
 
 ## Анализ ARP-запросов в Wireshark
 
 В поле "Target IP address" виден запрашиваемый адрес, в ответе содержится соответствующий MAC-адрес.
 
-![Анализ ARP-запросов в Wireshark](images/8.png)
+![Анализ ARP-запросов в Wireshark](image/8.jpg)
 
 ## Анализ ARP-запросов в Wireshark
 
 В IPv6 роль ARP выполняет NDP (Neighbor Discovery Protocol) поверх ICMPv6. Видны сообщения Router Solicitation, Router Advertisement, Neighbor Solicitation.
 
-![Анализ ARP-запросов в Wireshark](images/9.png)
+![Анализ ARP-запросов в Wireshark](image/9.jpg)
 
 # Самостоятельное задание
 
